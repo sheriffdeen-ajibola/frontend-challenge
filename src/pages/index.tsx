@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/navbar";
 import CarouselCard from "@/components/carouselCard";
+import CarouselContainer from "@/components/carouselContainer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +18,7 @@ export default function Home() {
   return (
     <div className={`${geistSans.className} ${geistMono.className} `}>
       <Navbar />
-      <CarouselCard />
+      <CarouselContainer />
     </div>
   );
 }

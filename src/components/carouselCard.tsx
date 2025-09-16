@@ -2,7 +2,7 @@ import React from "react";
 
 const CarouselCard = () => {
   return (
-    <div className="w-3/5 shadow-2xl mx-auto border m-8 max-w-7x ">
+    <div className="w-full shadow-2xl border m-8 max-w-2xl ">
       this is the carousel card
     </div>
   );
