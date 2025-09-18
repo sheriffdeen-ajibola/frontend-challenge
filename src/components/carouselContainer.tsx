@@ -3,10 +3,8 @@ import CarouselCard from "./carouselCard";
 
 const CarouselContainer = () => {
   return (
-    <div className="min-w-full border flex bg-amber-200">
-      <div className="w-full bg-amber-100 max-w-[900px] mx-auto">
-        <CarouselCard />
-      </div>
+    <div className="min-w-full border px-8 flex bg-amber-200">
+      <CarouselCard />
     </div>
   );
 };
