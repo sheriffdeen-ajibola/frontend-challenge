@@ -135,3 +135,5 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Embla styles moved into component Tailwind classes */

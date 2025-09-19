@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 const montserrat = Montserrat({
   variable: "--font-mont",
   subsets: ["latin"],
-  weight: ["800"], // for WAN 2.2 heading
+  weight: ["900"], // for WAN 2.2 heading
 });
 
 const inter = Inter({
@@ -25,10 +25,13 @@ const inter = Inter({
   // 400 = body, 500 = button, 600 = subheading
 });
 
+const SLIDE_COUNT = 5;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+
 export default function Home() {
   return (
     <div
-      className={`${geistSans.className} ${geistMono.className} ${montserrat.className} ${inter.className} `}>
+      className={`${geistSans.className} ${geistMono.className} ${montserrat.className} ${montserrat.variable} ${inter.variable}`}>
       <Navbar />
       <CarouselContainer />
     </div>
