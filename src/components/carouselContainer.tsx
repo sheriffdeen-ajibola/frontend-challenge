@@ -14,17 +14,35 @@ const CarouselContainer = () => {
     <Carousel className="border border-black  py-12">
       <div className="flex flex-col">
         <CarouselContent className="ml-12 ">
-          <CarouselItem className="basis-[900px] m-0 ">
+          <CarouselItem className="basis-[880px] m-0 ">
             <CarouselCard />
           </CarouselItem>
-          <CarouselItem className="basis-[900px] pl-12">
+          <CarouselItem className="basis-[880px] pl-12">
             <CarouselCard />
           </CarouselItem>
-          <CarouselItem className="basis-[900px] pl-12">
+          <CarouselItem className="basis-[880px] pl-12">
+            <CarouselCard />
+          </CarouselItem>
+          <CarouselItem className="basis-[880px] pl-12 ">
+            <CarouselCard />
+          </CarouselItem>
+          <CarouselItem className="basis-[880px] pl-12">
+            <CarouselCard />
+          </CarouselItem>
+          <CarouselItem className="basis-[880px] pl-12">
+            <CarouselCard />
+          </CarouselItem>
+          <CarouselItem className="basis-[880px] pl-12 ">
+            <CarouselCard />
+          </CarouselItem>
+          <CarouselItem className="basis-[880px] pl-12">
+            <CarouselCard />
+          </CarouselItem>
+          <CarouselItem className="basis-[880px] pl-12">
             <CarouselCard />
           </CarouselItem>
         </CarouselContent>
-        <div className=" absolute bottom-12.5 right-6 w-[40px]">
+        <div className=" absolute bottom-12.5 right-16 w-[40px]">
           <CarouselPrevious />
           <CarouselNext />
         </div>
