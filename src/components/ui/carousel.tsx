@@ -180,7 +180,7 @@ function CarouselPrevious({
       variant={variant}
       size={size}
       className={cn(
-        "absolute size-8 rounded-full bg-white/90 shadow-md",
+        "absolute size-8 rounded-full bg-gray-200 shadow-md",
         orientation === "horizontal"
           ? "top-1/2 left-0 -translate-y-1/2 -translate-x-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -209,7 +209,7 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        "absolute size-8 rounded-full bg-white/90 shadow-md",
+        "absolute size-8 rounded-full bg-gray-200 shadow",
         orientation === "horizontal"
           ? "top-1/2 right-0 -translate-y-1/2 translate-x-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -262,7 +262,7 @@ function CarouselDots({ className, ...props }: React.ComponentProps<"div">) {
           aria-label={`Go to slide ${idx + 1}`}
           onClick={() => api?.scrollTo(idx)}
           className={cn(
-            "w-3 h-3 rounded-full transition-colors border border-white/30",
+            "w-2 h-2 rounded-full transition-colors border border-white/30",
             selected === idx ? "bg-black" : "bg-gray-300"
           )}
         />
