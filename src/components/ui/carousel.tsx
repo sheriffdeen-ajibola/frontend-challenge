@@ -263,7 +263,7 @@ function CarouselDots({ className, ...props }: React.ComponentProps<"div">) {
           onClick={() => api?.scrollTo(idx)}
           className={cn(
             "w-3 h-3 rounded-full transition-colors border border-white/30",
-            selected === idx ? "bg-red-500" : "bg-gray-300"
+            selected === idx ? "bg-black" : "bg-gray-300"
           )}
         />
       ))}

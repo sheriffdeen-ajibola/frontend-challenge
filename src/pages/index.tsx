@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 const montserrat = Montserrat({
   variable: "--font-mont",
   subsets: ["latin"],
-  weight: ["900"], // for WAN 2.2 heading
+  weight: ["400", "500", "700", "900"],
 });
 
 const inter = Inter({

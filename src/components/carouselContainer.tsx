@@ -11,21 +11,21 @@ import {
 
 const CarouselContainer = () => {
   return (
-    <Carousel>
-      <div className="flex flex-col pl-6">
-        <CarouselContent className="ml-8">
+    <Carousel className="bg-amber-700 py-12">
+      <div className="flex flex-col bg-amber-200">
+        <CarouselContent className="ml-4 bg-blue-300">
           <CarouselItem className="basis-[900px] m-0 ">
             <CarouselCard />
           </CarouselItem>
-          <CarouselItem className="basis-[900px] pl-12">
+          <CarouselItem className="basis-[900px] pl-10">
             <CarouselCard />
           </CarouselItem>
-          <CarouselItem className="basis-[900px] pl-12">
+          <CarouselItem className="basis-[900px] pl-10">
             <CarouselCard />
           </CarouselItem>
         </CarouselContent>
-        <div className="relative bg-amber-300 w-full h-50vw">
-          <CarouselPrevious className="absolute " />
+        <div className=" absolute bottom-14 right-6 w-[40px]">
+          <CarouselPrevious />
           <CarouselNext />
         </div>
         <CarouselDots />
