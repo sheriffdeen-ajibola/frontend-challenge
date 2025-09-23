@@ -25,9 +25,6 @@ const inter = Inter({
   // 400 = body, 500 = button, 600 = subheading
 });
 
-const SLIDE_COUNT = 5;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
-
 export default function Home() {
   return (
     <div
