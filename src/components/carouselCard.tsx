@@ -5,7 +5,7 @@ const CarouselCard = () => {
     <div className="border min-w-3xl min-h-[60vh] rounded-4xl bg-blue-700 relative">
       <h1
         className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-   text-[7em] font-inter font-[700] tracking-tighter text-white text-center">
+   text-[6.5em] font-inter font-[700] tracking-tighter text-white text-center">
         WAN 2.2
       </h1>
 
