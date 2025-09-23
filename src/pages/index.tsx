@@ -31,7 +31,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 export default function Home() {
   return (
     <div
-      className={`${geistSans.className} ${geistMono.className} ${montserrat.className} ${montserrat.variable} ${inter.variable}`}>
+      className={`${geistSans.className} ${geistMono.className} ${montserrat.variable} ${inter.variable}`}>
       <Navbar />
       <CarouselContainer />
     </div>

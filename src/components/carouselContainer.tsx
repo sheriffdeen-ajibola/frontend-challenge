@@ -12,20 +12,20 @@ import {
 const CarouselContainer = () => {
   return (
     <Carousel>
-      <div className="flex flex-col px-6">
-        <CarouselContent className="ml-4 bg-amber-300">
-          <CarouselItem className="basis-[700px] m-0 bg-amber-700">
+      <div className="flex flex-col pl-6">
+        <CarouselContent className="ml-8">
+          <CarouselItem className="basis-[900px] m-0 ">
             <CarouselCard />
           </CarouselItem>
-          <CarouselItem className="basis-[700px]">
+          <CarouselItem className="basis-[900px] pl-12">
             <CarouselCard />
           </CarouselItem>
-          <CarouselItem className="basis-[700px]">
+          <CarouselItem className="basis-[900px] pl-12">
             <CarouselCard />
           </CarouselItem>
         </CarouselContent>
-        <div className="relative w-full">
-          <CarouselPrevious />
+        <div className="relative bg-amber-300 w-full h-50vw">
+          <CarouselPrevious className="absolute " />
           <CarouselNext />
         </div>
         <CarouselDots />

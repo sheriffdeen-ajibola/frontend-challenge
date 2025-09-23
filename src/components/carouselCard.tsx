@@ -2,12 +2,12 @@ import React from "react";
 
 const CarouselCard = () => {
   return (
-    <div className="border min-w-3xl min-h-[60vh] rounded-3xl bg-blue-700 relative">
-      <p
+    <div className="border min-w-3xl min-h-[60vh] rounded-4xl bg-blue-700 relative">
+      <h1
         className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-   text-[5em] font-mont font-black tracking-tighter text-white uppercase text-center">
+   text-[6em] font-mont text-white uppercase text-center">
         wan 2.2
-      </p>
+      </h1>
 
       <span className="absolute top-[8%] left-[4%] text-[.5em] text-white uppercase">
         new image model
