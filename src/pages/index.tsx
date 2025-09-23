@@ -21,7 +21,7 @@ const montserrat = Montserrat({
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   // 400 = body, 500 = button, 600 = subheading
 });
 
@@ -31,7 +31,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 export default function Home() {
   return (
     <div
-      className={`${geistSans.className} ${geistMono.className} ${montserrat.variable} ${inter.variable}`}>
+      className={`${geistSans.className} ${geistMono.className} ${montserrat.variable} ${inter.variable} `}>
       <Navbar />
       <CarouselContainer />
     </div>
