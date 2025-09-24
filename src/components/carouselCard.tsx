@@ -20,7 +20,7 @@ const CarouselCard: React.FC<CardData> = ({
         className="object-cover rounded-4xl"
       />
 
-      <div className="absolute inset-0 bg-black/40 rounded-4xl" />
+      <div className="absolute inset-0 rounded-4xl bg-gradient-to-b from-black/10 via-black/60 to-black/90" />
 
       <h1
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
@@ -34,7 +34,7 @@ const CarouselCard: React.FC<CardData> = ({
 
       <div className="absolute bottom-[8%] left-[4%] max-w-md text-white z-10">
         <h2 className="text-3xl font-medium font-inter">{subtitle}</h2>
-        <p className="text-sm text-white mt-1 w-[90%] font-extralight font-inter">
+        <p className="text-sm text-gray-300 mt-1 w-[90%] font-extralight font-inter">
           {description}
         </p>
       </div>
