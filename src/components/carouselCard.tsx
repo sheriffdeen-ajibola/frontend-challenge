@@ -20,7 +20,7 @@ const CarouselCard: React.FC<CardData> = ({
         className="object-cover rounded-4xl"
       />
 
-      <div className="absolute inset-0 rounded-4xl bg-gradient-to-b from-black/10 via-black/60 to-black/90" />
+      <div className="absolute inset-0 rounded-4xl bg-gradient-to-b from-black/10 via-black/40 to-black/90" />
 
       <h1
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
@@ -39,7 +39,7 @@ const CarouselCard: React.FC<CardData> = ({
         </p>
       </div>
 
-      <button className="absolute bottom-[7%] right-[4%] text-[1em] tracking-tighter font-inter cursor-pointer bg-white text-gray-700 [word-spacing:0.01em] px-[2em] py-[.8em] rounded-full font-medium shadow-md hover:bg-gray-100 transition z-10">
+      <button className="absolute bottom-[7%] right-[4%] text-[.9em] tracking-tighter font-inter  cursor-pointer bg-white text-gray-700 [word-spacing:0.01em] px-[2em] py-[.8em] rounded-full font-semibold shadow-md hover:bg-gray-100 transition z-10">
         {buttonText}
       </button>
     </div>

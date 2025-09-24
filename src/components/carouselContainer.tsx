@@ -31,7 +31,7 @@ const cards: CardData[] = [
     buttonText: "Try WAN 2.2",
   },
   {
-    imageUrl: "/",
+    imageUrl: "/flux.jpg",
     id: 2,
     badge: "OPEN SOURCE MODEL",
     title: "Open Source",
@@ -41,7 +41,7 @@ const cards: CardData[] = [
     buttonText: "Try FLUX.",
   },
   {
-    imageUrl: "/",
+    imageUrl: "/sketch.jpg",
     id: 3,
     badge: "beta feature",
     title: "Sketch AI",
@@ -51,7 +51,7 @@ const cards: CardData[] = [
     buttonText: "Start Drawing",
   },
   {
-    imageUrl: "/",
+    imageUrl: "/voice.jpg",
     id: 4,
     badge: "new update",
     title: "VoiceGen",
@@ -61,7 +61,7 @@ const cards: CardData[] = [
     buttonText: "Generate Voice",
   },
   {
-    imageUrl: "/",
+    imageUrl: "/style.jpg",
     id: 5,
     badge: "limited release",
     title: "StyleMix",
@@ -71,7 +71,7 @@ const cards: CardData[] = [
     buttonText: "Blend Now",
   },
   {
-    imageUrl: "/",
+    imageUrl: "/video.jpg",
     id: 6,
     badge: "popular",
     title: "Text2Video",
