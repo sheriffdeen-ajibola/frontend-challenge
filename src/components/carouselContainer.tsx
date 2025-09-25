@@ -81,7 +81,7 @@ const cards: CardData[] = [
     buttonText: "Try Text2Video",
   },
   {
-    imageUrl: "/",
+    imageUrl: "/dream.jpg",
     id: 7,
     badge: "experimental",
     title: "Dreamscape",
@@ -92,7 +92,7 @@ const cards: CardData[] = [
   },
 
   {
-    imageUrl: "/",
+    imageUrl: "/script.jpg",
     id: 8,
     badge: "exclusive",
     title: "ScriptBot",
@@ -102,7 +102,7 @@ const cards: CardData[] = [
     buttonText: "Write with AI",
   },
   {
-    imageUrl: "/",
+    imageUrl: "/pixel.jpg",
     id: 9,
     badge: "pro release",
     title: "PixelFix",
