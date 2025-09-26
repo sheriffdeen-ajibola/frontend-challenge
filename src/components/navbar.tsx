@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
             />
           </div>
 
-          <p className="text-gray-500 text-xs font-inter font-medium">
+          <p className="text-gray-500 text-xs font-inter font-bold">
             benevolentrimbiebat
           </p>
           <span className="cursor-pointer">
@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
             <span
               key={item.id}
               onClick={() => setActive(item.id)}
-              className={`cursor-pointer text-[14px] rounded-xl py-2.5 px-4 hover:bg-white hover:shadow-lg shadow-gray-200/10 transition 
+              className={`cursor-pointer text-[14px] rounded-xl py-2.5 px-4 hover:bg-white hover:shadow-2xl shadow-gray-300/50 transition 
               ${active === item.id ? "bg-white" : ""}`}>
               {item.icon}
             </span>
@@ -83,13 +83,13 @@ const Navbar: React.FC = () => {
           <span>
             <FaRegImage />
           </span>
-          <p className="font-inter text-[10px] ">Gallery</p>
+          <p className="font-inter text-[10px] font-bold ">Gallery</p>
         </div>
         <div className="flex justify-center cursor-pointer bg-gray-100 rounded-md py-1.5 px-2 text-gray-700 items-center gap-1">
           <span>
             <TbHeadset />
           </span>
-          <p className="font-inter text-[10px] ">Support</p>
+          <p className="font-inter text-[10px] font-bold ">Support</p>
         </div>
         <div className="flex justify-center cursor-pointer bg-gray-100 rounded-md py-1.5 px-1.5 text-gray-700 items-center gap-1">
           <span>

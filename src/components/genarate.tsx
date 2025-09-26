@@ -3,6 +3,7 @@ import { FiVideo, FiCpu, FiTrendingUp, FiEdit } from "react-icons/fi";
 import { MdOutlineMotionPhotosOn, MdOutlineVideoStable } from "react-icons/md";
 import { RiRobot2Line } from "react-icons/ri";
 import { BsImage } from "react-icons/bs";
+import { HiVideoCamera } from "react-icons/hi2";
 
 interface CardItem {
   id: number;
@@ -10,6 +11,7 @@ interface CardItem {
   description: string;
   status?: "New" | "Beta";
   icon: React.ReactNode;
+  background: string;
 }
 
 const cardItems: CardItem[] = [
@@ -19,18 +21,21 @@ const cardItems: CardItem[] = [
     description: "Generate images with custom styles in Flux and Ideogram.",
     status: "New",
     icon: <BsImage />,
+    background: "bg-gradient-to-b from-gray-700 to-gray-300",
   },
   {
     id: 2,
     title: "Video",
     description: "Generate videos with Hailuo, Pika, Runway, Lumal, and more.",
-    icon: <FiVideo className="text-2xl text-gray-700" />,
+    icon: <HiVideoCamera />,
+    background: "bg-yellow-400",
   },
   {
     id: 3,
     title: "Realtime",
     description: "Realtime AI rendering on a canvas. Instant feedback loops.",
     icon: <FiCpu className="text-2xl text-gray-700" />,
+    background: "bg-gradient-to-b from-sky-600 to-sky-200",
   },
   {
     id: 4,
@@ -38,13 +43,15 @@ const cardItems: CardItem[] = [
     description: "Upscale and enhance images and videos up to 22K.",
     status: "New",
     icon: <FiTrendingUp className="text-2xl text-gray-700" />,
+    background: "bg-gradient-to-b from-gray-800 to-gray-400",
   },
   {
     id: 5,
     title: "Edit",
     description: "Add objects, change style, or expand photos and generations.",
     status: "New",
-    icon: <FiEdit className="text-2xl text-gray-700" />,
+    icon: <FiEdit className="text-2xl text-gray-700 " />,
+    background: "bg-gradient-to-b from-black via-purple-900 to-gray-400",
   },
   {
     id: 6,
@@ -52,6 +59,7 @@ const cardItems: CardItem[] = [
     description: "Lip sync any video to any audio.",
     status: "New",
     icon: <MdOutlineVideoStable className="text-2xl text-gray-700" />,
+    background: "bg-gradient-to-b from-gray-900 via-gray-500 to-green-200",
   },
   {
     id: 7,
@@ -59,47 +67,52 @@ const cardItems: CardItem[] = [
     description: "Transfer motion to images and animate characters.",
     status: "New",
     icon: <MdOutlineMotionPhotosOn className="text-2xl text-gray-700" />,
+    background: "bg-black",
   },
   {
     id: 8,
     title: "Train",
     description: "Teach AI to replicate your style, products, or characters.",
     icon: <RiRobot2Line className="text-2xl text-gray-700" />,
+    background: "bg-white",
   },
 ];
 
 const Generate: React.FC = () => {
   return (
-    <div className="max-w-[1470px] w-[95%] bg-amber-200 mx-auto py-8 font-inter">
+    <div className="max-w-[1470px] w-[95%]  mx-auto py-8 font-inter">
       <h2 className="text-xl font-semibold mb-4 font-inter">Generate</h2>
 
       <div className="grid grid-cols-4 max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 gap-6">
         {cardItems.map((item) => (
           <div
             key={item.id}
-            className="flex justify-between border border-gray-200 rounded-2xl p-4 bg-white hover:shadow-md transition">
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg">
+            className="flex items-center p-2 justify-center space-x-2 rounded-2xl  bg-white hover:shadow-md transition">
+            <div className="flex items-center justify-between bg-amber-100">
+              <div
+                className={`w-13 h-13 text-2xl flex items-center text-white justify-center rounded-lg ${item.background}`}>
                 {item.icon}
               </div>
             </div>
 
-            <div className="mt-4 flex-1">
-              <div className="flex gap-2">
-                <h3 className="text-sm font-semibold text-gray-900">
+            <div className="flex-1 flex flex-col ">
+              <div className="flex gap-2 -mb-1">
+                <h3 className="text-sm font-semibold text-gray-700">
                   {item.title}
                 </h3>
                 {item.status && (
-                  <span className="text-xs font-medium text-blue-600 bg-blue-100 px-2 py-0.5 rounded-md">
+                  <span className="text-xs font-medium text-white bg-blue-500 px-2 py-0.5 rounded-lg">
                     {item.status}
                   </span>
                 )}
               </div>
 
-              <p className="text-xs text-gray-500 mt-1">{item.description}</p>
+              <p className="text-xs font-medium text-gray-500 mt-1 ">
+                {item.description}
+              </p>
             </div>
 
-            <button className="mt-4 text-sm font-medium text-gray-700 border border-gray-200 rounded-lg px-3 py-1 hover:bg-gray-100">
+            <button className="text-xs font-medium text-gray-700 rounded-full px-5 py-2 bg-gray-100 hover:bg-gray-200 cursor-pointer">
               Open
             </button>
           </div>
