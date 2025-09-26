@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Montserrat, Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import CarouselContainer from "@/components/carouselContainer";
+import React from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,12 +25,14 @@ const inter = Inter({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div
-      className={`${geistSans.className} ${geistMono.className} ${montserrat.variable} ${inter.variable} `}>
+      className={`${geistSans.className} ${geistMono.className} ${montserrat.variable} ${inter.variable}`}>
       <Navbar />
       <CarouselContainer />
     </div>
   );
-}
+};
+
+export default Home;
