@@ -115,7 +115,7 @@ const cards: CardData[] = [
 
 const CarouselContainer: React.FC = () => {
   return (
-    <Carousel className="border border-black py-12">
+    <Carousel className="py-12">
       <div className="flex flex-col">
         <CarouselContent className="ml-10">
           {cards.map((card, index) => (

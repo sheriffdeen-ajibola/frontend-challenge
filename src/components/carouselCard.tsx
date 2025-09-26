@@ -12,7 +12,7 @@ const CarouselCard: React.FC<CardData> = ({
   imageUrl,
 }) => {
   return (
-    <div className="border min-w-3xl min-h-[60vh] rounded-4xl relative overflow-hidden">
+    <div className="border min-w-3xl min-h-[60vh] rounded-4xl relative overflow-hidden ">
       <Image src={imageUrl} alt={title} fill className="object-cover " />
 
       <div className="absolute inset-0 rounded-4xl bg-gradient-to-b from-black/10 via-black/40 to-black/90" />

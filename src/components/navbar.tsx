@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { FiSettings } from "react-icons/fi";
 import { PiHouseFill } from "react-icons/pi";
 import { BsImage } from "react-icons/bs";
 import { HiVideoCamera } from "react-icons/hi2";
@@ -9,6 +8,10 @@ import { GrAppleAppStore } from "react-icons/gr";
 import { FaWandMagicSparkles } from "react-icons/fa6";
 import { GiClawHammer } from "react-icons/gi";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { TbHeadset } from "react-icons/tb";
+import { FaRegImage } from "react-icons/fa6";
+import { FaBell } from "react-icons/fa6";
+import { BsFillBrightnessHighFill } from "react-icons/bs";
 
 interface IconItem {
   id: number;
@@ -29,9 +32,9 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <div className="flex items-center justify-between border-b border-gray-300 px-6 py-1 bg-white max-w-[1565px] mx-auto">
-      <div className="flex-1 flex items-center gap-4 px-0 border">
-        <div className="h-full">
+    <div className="flex items-center justify-between  px-6 py-1 bg-white  mx-auto">
+      <div className="flex-1 flex items-center gap-4 px-0 ">
+        <div className="h-full w-12">
           <Image
             src="/krea.png"
             alt="Profile"
@@ -41,8 +44,8 @@ const Navbar: React.FC = () => {
           />
         </div>
 
-        <div className="flex justify-center items-center gap-2">
-          <div className="w-8 h-8">
+        <div className="flex justify-center items-center gap-1.5">
+          <div className="w-7 h-7">
             <Image
               src="/circle.webp"
               alt="Profile"
@@ -61,13 +64,13 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex-1 flex justify-center items-center border">
-        <div className="flex items-center gap-1 p-1.5 py-1 bg-gray-100 text-gray-700 rounded-xl text-2xl">
+      <div className="flex-1 flex justify-center items-center ">
+        <div className="flex items-center gap-1 p-1.5 py-1.5 bg-gray-100 text-gray-700 rounded-xl text-2xl">
           {icons.map((item) => (
             <span
               key={item.id}
               onClick={() => setActive(item.id)}
-              className={`cursor-pointer text-[16px] rounded-xl py-2.5 px-4 hover:bg-white hover:shadow-lg shadow-gray-200/10 transition 
+              className={`cursor-pointer text-[14px] rounded-xl py-2.5 px-4 hover:bg-white hover:shadow-lg shadow-gray-200/10 transition 
               ${active === item.id ? "bg-white" : ""}`}>
               {item.icon}
             </span>
@@ -75,18 +78,37 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex-1 flex items-center space-x-4 border">
-        <FiSettings className="text-gray-700 text-2xl cursor-pointer" />
-
-        <div className="flex items-center space-x-2 cursor-pointer">
+      <div className="flex-1 flex items-center justify-end space-x-2 h-full">
+        <div className="flex  justify-center cursor-pointer bg-gray-100 rounded-md py-1.5 px-2 text-gray-700 items-start gap-1">
+          <span>
+            <FaRegImage />
+          </span>
+          <p className="font-inter text-[10px] ">Gallery</p>
+        </div>
+        <div className="flex justify-center cursor-pointer bg-gray-100 rounded-md py-1.5 px-2 text-gray-700 items-center gap-1">
+          <span>
+            <TbHeadset />
+          </span>
+          <p className="font-inter text-[10px] ">Support</p>
+        </div>
+        <div className="flex justify-center cursor-pointer bg-gray-100 rounded-md py-1.5 px-1.5 text-gray-700 items-center gap-1">
+          <span>
+            <FaBell />
+          </span>
+        </div>
+        <div className="flex justify-center cursor-pointer bg-gray-100 rounded-md py-1.5 px-1.5 text-gray-700 items-center gap-1">
+          <span>
+            <BsFillBrightnessHighFill />
+          </span>
+        </div>
+        <div className="w-7 h-7">
           <Image
-            src="/avatar.png"
+            src="/circle.webp"
             alt="Profile"
-            width={32}
-            height={32}
-            className="rounded-full"
+            width={40}
+            height={40}
+            className="rounded-full w-full"
           />
-          <span className="text-sm font-medium text-gray-900">Profile</span>
         </div>
       </div>
     </div>
