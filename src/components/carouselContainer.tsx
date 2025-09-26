@@ -117,11 +117,11 @@ const CarouselContainer: React.FC = () => {
   return (
     <Carousel className="border border-black py-12">
       <div className="flex flex-col">
-        <CarouselContent className="ml-8">
+        <CarouselContent className="ml-10">
           {cards.map((card, index) => (
             <CarouselItem
               key={card.id}
-              className={`basis-[900px] ${index === 0 ? "m-0" : "pl-16"}`}>
+              className={`basis-[900px] ${index === 0 ? "m-0" : "pl-14"}`}>
               <CarouselCard {...card} />
             </CarouselItem>
           ))}
