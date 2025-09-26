@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <div className="flex items-center justify-between  px-6 py-1 bg-white  mx-auto">
+    <div className="flex items-center justify-between  px-6 py-1 bg-white max-w-[1550]  mx-auto">
       <div className="flex-1 flex items-center gap-4 px-0 ">
         <div className="h-full w-12">
           <Image
