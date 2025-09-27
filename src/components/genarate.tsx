@@ -1,9 +1,12 @@
 import React from "react";
-import { FiVideo, FiCpu, FiTrendingUp, FiEdit } from "react-icons/fi";
-import { MdOutlineMotionPhotosOn, MdOutlineVideoStable } from "react-icons/md";
-import { RiRobot2Line } from "react-icons/ri";
 import { BsImage } from "react-icons/bs";
 import { HiVideoCamera } from "react-icons/hi2";
+import { FaWandMagicSparkles } from "react-icons/fa6";
+import { GiClawHammer } from "react-icons/gi";
+import { GrAppleAppStore } from "react-icons/gr";
+import { GiMicrophone } from "react-icons/gi";
+import { TbManFilled } from "react-icons/tb";
+import { PiApplePodcastsLogoFill } from "react-icons/pi";
 
 interface CardItem {
   id: number;
@@ -34,7 +37,7 @@ const cardItems: CardItem[] = [
     id: 3,
     title: "Realtime",
     description: "Realtime AI rendering on a canvas. Instant feedback loops.",
-    icon: <FiCpu className="text-2xl text-gray-700" />,
+    icon: <GiClawHammer className="rotate-180" />,
     background: "bg-gradient-to-b from-sky-600 to-sky-200",
   },
   {
@@ -42,7 +45,7 @@ const cardItems: CardItem[] = [
     title: "Enhancer",
     description: "Upscale and enhance images and videos up to 22K.",
     status: "New",
-    icon: <FiTrendingUp className="text-2xl text-gray-700" />,
+    icon: <FaWandMagicSparkles className="rotate-270" />,
     background: "bg-gradient-to-b from-gray-800 to-gray-400",
   },
   {
@@ -50,7 +53,7 @@ const cardItems: CardItem[] = [
     title: "Edit",
     description: "Add objects, change style, or expand photos and generations.",
     status: "New",
-    icon: <FiEdit className="text-2xl text-gray-700 " />,
+    icon: <GrAppleAppStore />,
     background: "bg-gradient-to-b from-black via-purple-900 to-gray-400",
   },
   {
@@ -58,7 +61,7 @@ const cardItems: CardItem[] = [
     title: "Video Lipsync",
     description: "Lip sync any video to any audio.",
     status: "New",
-    icon: <MdOutlineVideoStable className="text-2xl text-gray-700" />,
+    icon: <GiMicrophone />,
     background: "bg-gradient-to-b from-gray-900 via-gray-500 to-green-200",
   },
   {
@@ -66,21 +69,21 @@ const cardItems: CardItem[] = [
     title: "Motion Transfer",
     description: "Transfer motion to images and animate characters.",
     status: "New",
-    icon: <MdOutlineMotionPhotosOn className="text-2xl text-gray-700" />,
+    icon: <TbManFilled />,
     background: "bg-black",
   },
   {
     id: 8,
     title: "Train",
     description: "Teach AI to replicate your style, products, or characters.",
-    icon: <RiRobot2Line className="text-2xl text-gray-700" />,
+    icon: <PiApplePodcastsLogoFill className="text-blue-600" />,
     background: "bg-white",
   },
 ];
 
 const Generate: React.FC = () => {
   return (
-    <div className="max-w-[1470px] w-[95%]  mx-auto py-8 font-inter">
+    <div className="max-w-[1470px] w-[95%]  mx-auto  font-inter">
       <h2 className="text-xl font-semibold mb-4 font-inter">Generate</h2>
 
       <div className="grid grid-cols-4 max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 gap-6">
@@ -96,7 +99,7 @@ const Generate: React.FC = () => {
             </div>
 
             <div className="flex-1 flex flex-col ">
-              <div className="flex gap-2 -mb-1">
+              <div className="flex gap-2 -mb-1 items-center">
                 <h3 className="text-sm font-semibold text-gray-700">
                   {item.title}
                 </h3>
