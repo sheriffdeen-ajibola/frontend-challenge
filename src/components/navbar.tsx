@@ -9,6 +9,7 @@ import { FaWandMagicSparkles, FaRegImage, FaBell } from "react-icons/fa6";
 import { GiClawHammer } from "react-icons/gi";
 import { MdKeyboardArrowDown, MdMenu, MdClose } from "react-icons/md";
 import { TbHeadset } from "react-icons/tb";
+import ThemeToggle from "./themeToggle";
 
 interface IconItem {
   id: number;
@@ -32,9 +33,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="px-6 py-2 bg-white border-b border-gray-200">
       <div className="flex items-center justify-between max-w-[1550px] mx-auto">
-        {/* LEFT SECTION */}
         <div className="flex-1 flex items-center gap-4">
-          {/* Logo */}
           <div className="h-full w-12">
             <Image
               src="/krea.png"
@@ -45,7 +44,6 @@ const Navbar: React.FC = () => {
             />
           </div>
 
-          {/* Username (hide on small) */}
           <div className="hidden lg:flex justify-center items-center gap-1.5">
             <div className="w-7 h-7">
               <Image
@@ -65,7 +63,6 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* CENTER SECTION (nav icons) */}
         <div className="flex-1 hidden lg:flex justify-center items-center">
           <div className="flex items-center gap-1 p-1.5 bg-gray-100 text-gray-700 rounded-xl text-2xl">
             {icons.map((item) => (
@@ -80,9 +77,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* RIGHT SECTION */}
         <div className="flex-1 flex items-center justify-end space-x-2">
-          {/* Desktop Right */}
           <div className="hidden lg:flex items-center gap-2">
             <div className="flex cursor-pointer bg-gray-100 rounded-md py-1.5 px-2 text-gray-700 items-center gap-1">
               <FaRegImage />
@@ -95,9 +90,7 @@ const Navbar: React.FC = () => {
             <div className="flex cursor-pointer bg-gray-100 rounded-md py-1.5 px-1.5 text-gray-700 items-center">
               <FaBell />
             </div>
-            <div className="flex cursor-pointer bg-gray-100 rounded-md py-1.5 px-1.5 text-gray-700 items-center">
-              <BsFillBrightnessHighFill />
-            </div>
+            <ThemeToggle />
             <div className="w-7 h-7">
               <Image
                 src="/circle.webp"
@@ -109,7 +102,6 @@ const Navbar: React.FC = () => {
             </div>
           </div>
 
-          {/* Mobile Right (lg:hidden) */}
           <div className="flex lg:hidden items-center gap-3">
             <div className="cursor-pointer bg-gray-100 rounded-md p-2 text-gray-700">
               <BsFillBrightnessHighFill />
@@ -123,10 +115,8 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* DROPDOWN MENU for Mobile */}
       {menuOpen && (
         <div className="lg:hidden mt-3 space-y-3 bg-gray-50 rounded-md p-4 shadow-lg">
-          {/* Center Icons */}
           <div className="flex flex-wrap justify-center gap-2">
             {icons.map((item) => (
               <span
@@ -139,7 +129,6 @@ const Navbar: React.FC = () => {
             ))}
           </div>
 
-          {/* Right Section Items */}
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-2 cursor-pointer bg-gray-100 rounded-md py-2 px-3 text-gray-700">
               <FaRegImage />
