@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { PiHouseFill } from "react-icons/pi";
-import { BsImage, BsFillBrightnessHighFill } from "react-icons/bs";
+import { BsImage } from "react-icons/bs";
 import { HiVideoCamera } from "react-icons/hi2";
 import { FaFolder } from "react-icons/fa";
 import { GrAppleAppStore } from "react-icons/gr";
 import { FaWandMagicSparkles, FaRegImage, FaBell } from "react-icons/fa6";
 import { GiClawHammer } from "react-icons/gi";
-import { MdKeyboardArrowDown, MdMenu, MdClose } from "react-icons/md";
+import { MdMenu, MdClose } from "react-icons/md";
 import { TbHeadset } from "react-icons/tb";
 import ThemeToggle from "./themeToggle";
+import { ChevronDown } from "lucide-react";
 
 interface IconItem {
   id: number;
@@ -70,7 +71,7 @@ const Navbar: React.FC = () => {
               benevolentrimbiebat
             </p>
             <span className="cursor-pointer">
-              <MdKeyboardArrowDown />
+              <ChevronDown className="stroke-2 w-4" />
             </span>
           </div>
         </div>

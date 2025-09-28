@@ -7,6 +7,7 @@ import { GrAppleAppStore } from "react-icons/gr";
 import { GiMicrophone } from "react-icons/gi";
 import { TbManFilled } from "react-icons/tb";
 import { PiApplePodcastsLogoFill } from "react-icons/pi";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 interface CardItem {
   id: number;
@@ -84,7 +85,15 @@ const cardItems: CardItem[] = [
 const Generate: React.FC = () => {
   return (
     <div className="max-w-[1470px] w-[95%]  mx-auto  font-inter">
-      <h2 className="text-xl font-semibold mb-4 font-inter">Generate</h2>
+      <div className="flex justify-between">
+        <h2 className="text-xl font-semibold mb-4 font-inter">Generate</h2>
+        <div className="flex text-blue-600">
+          <span className="cursor-pointer">
+            <MdKeyboardArrowDown className="w-8" />
+          </span>
+          <p className="text-xs font-inter font-bold">Show all</p>
+        </div>
+      </div>
 
       <div className="grid grid-cols-4 max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 gap-6">
         {cardItems.map((item) => (
@@ -100,7 +109,7 @@ const Generate: React.FC = () => {
 
             <div className="flex-1 flex flex-col ">
               <div className="flex gap-2 -mb-1 items-center">
-                <h3 className="text-sm font-semibold text-gray-700">
+                <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
                   {item.title}
                 </h3>
                 {item.status && (
@@ -110,12 +119,12 @@ const Generate: React.FC = () => {
                 )}
               </div>
 
-              <p className="text-xs font-medium text-gray-500 mt-1 ">
+              <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mt-1 ">
                 {item.description}
               </p>
             </div>
 
-            <button className="text-xs font-medium text-gray-700 rounded-full px-5 py-2 bg-gray-100 hover:bg-gray-200 cursor-pointer">
+            <button className="text-xs font-medium text-gray-700 rounded-full px-5 py-2 bg-gray-100  hover:bg-gray-200 cursor-pointer">
               Open
             </button>
           </div>

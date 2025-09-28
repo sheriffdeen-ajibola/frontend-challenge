@@ -115,19 +115,23 @@ const cards: CardData[] = [
 
 const CarouselContainer: React.FC = () => {
   return (
-    <Carousel className="py-12 ">
-      <div className="flex flex-col">
-        <CarouselContent className="ml-10">
+    <Carousel className="py-12 max-lg:pt-6 max-sm:mb-4">
+      <div className="flex flex-col ">
+        <CarouselContent className="ml-10 max-md:ml-0 ">
           {cards.map((card, index) => (
             <CarouselItem
               key={card.id}
-              className={`basis-[890px] ${index === 0 ? "m-0" : "pl-14"}`}>
+              className={`basis-[890px] max-md:basis-[100%] ${
+                index === 0
+                  ? "m-0 max-lg:-ml-4 max-md:basis-[103%]"
+                  : "pl-14 max-md:pl-0"
+              }`}>
               <CarouselCard {...card} />
             </CarouselItem>
           ))}
         </CarouselContent>
 
-        <div className="absolute bottom-12.5 right-16 w-[40px]">
+        <div className="absolute bottom-12.5 right-16 w-[40px] max-sm:right-[50%] max-sm:bottom-5 max-sm: translate-1/2">
           <CarouselPrevious />
           <CarouselNext />
         </div>
