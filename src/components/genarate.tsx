@@ -90,8 +90,8 @@ const Generate: React.FC = () => {
         {cardItems.map((item) => (
           <div
             key={item.id}
-            className="flex items-center p-2 justify-center space-x-2 rounded-2xl  bg-white hover:shadow-md transition">
-            <div className="flex items-center justify-between bg-amber-100">
+            className="flex items-center p-2 justify-center space-x-2 rounded-2xl  bg-white dark:bg-gray-900 hover:shadow-md transition">
+            <div className="flex items-center justify-between ">
               <div
                 className={`w-13 h-13 text-2xl flex items-center text-white justify-center rounded-lg ${item.background}`}>
                 {item.icon}
